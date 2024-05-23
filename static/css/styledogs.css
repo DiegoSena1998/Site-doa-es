@@ -1,0 +1,60 @@
+
+
+    body {
+            background-color: #c9e4e7; /* Baby blue background color */
+            font-family: Arial, sans-serif; /* Use Arial font for text */
+            text-align: center; /* Center-align text */
+            padding: 20px; /* Add some padding for better readability */
+        }
+
+    h1 {
+            color: #555; /* Dark gray text color for headings */
+            
+        }
+
+        h6 {
+            color: #888; /* Light gray text color for smaller headings */
+        }
+        
+        h5 {background-color: #ffcab0;
+          
+        } 
+        p {
+            color: #333; /* Slightly darker gray text color for paragraphs */
+            
+        }
+
+        img {
+            border-radius: 50%; /* Make the image round */
+            margin-top: 20px; /* Add some space between the image and text */
+            background-color: #ffcab0;
+        }
+
+        .dog-info {
+            display: inline-block; /* Display dog info in line */
+            margin-top: 10px; /* Add some space between each dog info */
+            
+        }
+
+        .dog-name {
+            color: #555; /* Dark gray text color for dog names */
+            text-decoration: none; /* Remove underline from hyperlinks */
+            
+        }
+
+        .dog-name:hover {
+            color: #008cba; /* Change color on hover */
+        }
+        .styled-button {
+            background-color: #5585b5; /* Green background color */
+            border: none; /* Remove border */
+            color: white; /* White text color */
+            padding: 15px 32px; /* Add padding */
+            text-align: center; /* Center-align text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline block */
+            font-size: 13px; /* Font size */
+            margin: 4px 2px; /* Add margin */
+            cursor: pointer; /* Add cursor on hover */
+            border-radius: 7px; /* Add border radius */
+        }

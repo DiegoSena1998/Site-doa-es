@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Doguinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .background-image {
+            background-image: url('/static/imagens/cachorro-fofo.avif');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh; /* Torna a imagem cobrir toda a altura da janela do navegador */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            position: relative; /* Define a posição relativa para que o conteúdo seja empurrado para cima */
+            z-index: 1; /* Coloca o conteúdo sobre a imagem de fundo */
+        }
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+        }
+        nav {
+            background-color: #0047ab;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0056b3; /* Cor ajustada para destacar */
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #004083; /* Cor ajustada para hover */
+        }
+        .content {
+            max-width: 800px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <header>
+            <h1>Doação de Pets</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/" onclick="mostrarMensagem('Página Inicial')">Página Inicial</a></li>
+                <li><a href="/informacoes" onclick="mostrarMensagem('Sobre')">Sobre</a></li>
+                <li><a href="/login" onclick="mostrarMensagem('Login')">Login</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>Bem-vindo ao Site de Doação de Pets</h2>
+            <p>Encontre o seu novo melhor amigo aqui!</p>
+            <p>Nós oferecemos uma variedade de animais de estimação para adoção.</p>
+            <p>Se você estiver interessado em doar um pet, entre em contato conosco.</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMensagem(nomePagina) {
+            console.log("Você clicou em " + nomePagina);
+            // Aqui você pode adicionar qualquer ação que desejar ao clicar nos botões do menu
+        }
+    </script>
+</body>
+</html>

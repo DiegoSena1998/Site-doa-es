@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <style>
+        /* Estilos CSS adicionados inline */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("/static/imagens/um-cachorro.avif");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        #texto_superior {
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    {% set mensagem = get_flashed_messages() %}
+    {% if mensagem %}
+        <div class="flash_alerta">
+            {{ mensagem[0] }}
+        </div>
+    {% endif %}
+
+    <div id="form_fundo">
+        <h1>*Pagina de adoção e doação para os dogs de rua*</h1>
+        <h1>Uma colaboração Univesp</h1>
+        <div id="form_frente">
+            <form action="/login" id="login" method="post">
+                <label for="nome">NOME</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome"><br><br>
+                <label for="senha" id="senha">SENHA</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite sua senha"><br><br>
+                <button type="submit" id="btn_login">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>ENTRAR
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botão "Cadastrar-se" e link para imagem de fundo -->
+    <div id="cadastro_fundo">
+        <button id="btn_cadastrar">Cadastrar-se</button>
+        <!-- Removei a imagem aqui, pois ela já está definida como fundo do corpo -->
+    </div>
+    
+
+</body>
+
+</html>

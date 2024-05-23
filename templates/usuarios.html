@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+
+    <style>
+        /* Estilos para o formulário */
+        form {
+            border: 2px solid #008CBA; /* Borda sólida azul */
+            border-radius: 10px; /* Borda arredondada */
+            padding: 20px; /* Espaçamento interno */
+            width: 300px; /* Largura do formulário */
+            margin: 0 auto; /* Centralizar horizontalmente */
+        }
+
+        label {
+            display: block; /* Cada label em uma nova linha */
+            margin-bottom: 10px; /* Espaçamento inferior */
+            color: #008CBA; /* Cor do texto em azul */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            margin-bottom: 15px; /* Espaçamento inferior */
+            border: 1px solid #008CBA; /* Borda azul */
+            border-radius: 5px; /* Borda arredondada */
+            box-sizing: border-box; /* Tamanho da caixa inclui borda */
+        }
+
+        textarea {
+            height: 100px; /* Altura da área de texto */
+        }
+
+        input[type="submit"] {
+            background-color: #008CBA; /* Cor de fundo azul */
+            color: white; /* Cor do texto branco */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de ponteiro */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005F6B; /* Cor de fundo mais escura no hover */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="/static/imagens/dogLogo.png" alt="logo" width="200" height="200">
+
+    <h6>Procurando um amigo de quatro patas? Você chegou ao lugar certo!</h6>
+
+    <p>Ficou interessado em adotar? Entre em contato conosco através do e-mail:alunos@univesp.br</strong></p>
+
+    <p>Nosso compromisso com adoção <strong>responsável</strong></p>
+
+    <br>
+    <br>
+
+    <h5>Doguinhos a procura de um lar</h5>
+    <div class="dog-info">
+        <a class="dog-name" href="/bobby">Bobby</a>
+        <img src="/static/imagens/bobby.png" alt="Dog 1" width="100" height="100">
+    </div>
+    <div class="dog-info">
+        <a class="dog-name" href="/minnie">Minnie</a>
+        <img src="/static/imagens/minnie.png" alt="Dog 3" width="100" height="90">
+    </div>
+
+    <p>Bobby é um menino muito tranquilo e amoroso que adora crianças, porém infelizmente viveu em uma casa com outro cachorro que o atacava com frequência e por isso ainda tem muito medo de outros animais.!</p>
+
+    <p>Minnie é uma adorável Dachshund de 2 anos de idade que, infelizmente, foi abandonada quando seus ex-tutores se mudaram para um local que não aceitava cachorros e agora está em busca de um novo lar. Ela é uma cachorrinha cheia de energia e amor para dar.
+    ideal para uma casa com crianças e outros doguinhos.</p>
+
+    <!-- Texto sobre doação -->
+    <p>Faça uma doação para nossa instituição e ajude nossos amigos de quatro patas a encontrarem um lar amoroso!</p>
+
+    <!-- Formulário de doação -->
+    <form method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <!-- Adicione todos os estados do Brasil aqui -->
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <label for="doacao">Valor da Doação:</label>
+        <input type="text" id="doacao" name="doacao">
+        <label for="mensagem">Deixe uma mensagem para nós:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <input type="submit" value="Doar">
+    </form>
+
+</body>
+</html>
